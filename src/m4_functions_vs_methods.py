@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Jaclyn Setina.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -69,23 +69,24 @@ def main():
     calls the other functions in this module to test/demo them,
     and waits for the user to click anywhere in the window to close it.
     """
-    window = rg.TurtleWindow()
-
-    # Make the animation go much faster.
-    #   First number:  bigger means faster.
-    #   Second number: bigger means slower.
-    window.tracer(1, 1)
-
-    jump_and_move_turtle(100, 50, 200, -100)
-    turtle = rg.SimpleTurtle('square')
-    draw_many_squares(turtle, 3, 75, 15)
-    turtle3()
-
-    # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
-
-    window.close_on_mouse_click()
-
+    # window = rg.TurtleWindow()
+    #
+    # # Make the animation go much faster.
+    # #   First number:  bigger means faster.
+    # #   Second number: bigger means slower.
+    # window.tracer(1, 1)
+    #
+    # jump_and_move_turtle(100, 50, 200, -100)
+    # turtle = rg.SimpleTurtle('square')
+    # draw_many_squares(turtle, 3, 75, 15)
+    # turtle3()
+    #
+    # # When the TODOs ask you to test YOUR code, put YOUR tests here:
+    #
+    #
+    # window.close_on_mouse_click()
+    #try_methods()
+    try_methods_and_functions()
 
 def jump_and_move_turtle(x1, y1, x2, y2):
     """
@@ -172,10 +173,17 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
+
+    # sarah = rg.SimpleTurtle()
+    # sarah.pen = rg.Pen('brown', 5)
+    # sarah.forward(150)
+    # sarah.left(90)
+    # sarah.forward(50)
+    # sarah.backward(100)
 
 
 def try_functions():
@@ -186,7 +194,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -197,6 +205,11 @@ def try_functions():
     # HINT: see   jump_and_move_turtle   above.
     #
     ####################################################################
+
+
+    # jump_and_move_turtle(200,100, 300,30)
+    # jump_and_move_turtle(100, 200, 0, 0)
+    # jump_and_move_turtle(-50, 50, 100, 100)
 
 
 def try_methods_and_functions():
@@ -242,6 +255,22 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
+
+    jim = rg.SimpleTurtle()
+    jim.pen = rg.Pen('blue', 5)
+    jim.backward(150)
+    jim.speed(1)
+    draw_many_squares(jim, 2, 100, 30)
+    jim.speed(5)
+    jim.pen = rg.Pen('red', 5)
+    draw_many_squares(jim, 10, 50, 15)
+    jim.speed(100)
+    jim.pen = rg.Pen('red', 35)
+    draw_many_squares(jim, 300, 60)
+    jim.pen = rg.Pen('black', 3)
+    jim.backward(200)
+    jim.draw_circle(30)
+    jim.draw_square(50)
 
 
 # ----------------------------------------------------------------------
