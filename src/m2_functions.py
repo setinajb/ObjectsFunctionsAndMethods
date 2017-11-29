@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Jaclyn Setina.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -34,6 +34,8 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -105,7 +107,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -135,9 +137,10 @@ def turtle3():
 #
 ########################################################################
 
+
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -165,9 +168,22 @@ def turtle3():
 #
 ########################################################################
 
+
+def turtle4():
+
+    jackie = rg.SimpleTurtle()
+    jackie.pen = rg.Pen('red', 15)
+    jackie.paint_bucket = rg.PaintBucket('green')
+    jackie.backward(300)
+
+    jackie.begin_fill()
+    jackie.draw_circle(100)
+    jackie.end_fill()
+
+
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +199,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
@@ -219,7 +235,28 @@ def turtle3():
 #
 ########################################################################
 
+def turtle5():
+    megan = rg.SimpleTurtle()
+    megan.pen = rg.Pen('blue', 5)
+    megan.paint_bucket = rg.PaintBucket('maroon')
+    megan.forward(300)
+
+    megan.begin_fill()
+    megan.draw_circle(50)
+    megan.end_fill()
+
+    sara = rg.SimpleTurtle()
+    sara.pen = rg.Pen('green', 15)
+    sara.paint_bucket = rg.PaintBucket('green')
+    sara.backward(300)
+
+    sara.begin_fill()
+    sara.draw_square(40)
+    sara.end_fill()
+
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 main()
